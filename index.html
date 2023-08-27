@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <script src="main.js" defer></script>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Tilt Prism"
+  />
+  </head>
+  
+  <body>
+    <a href="file:///Full stack web 13.10.22/calculator files/index.html"></a>
+    <div class="navBarDiv">
+      <div class="bar" id="bar1"></div>
+      <div class="bar" id="bar2"></div>
+      <div class="bar" id="bar3"></div>
+    </div>
+
+    <div class="menu">
+      <a href="#top">Home</a>
+      <a href="#card">Projects</a>
+    </div>
+
+    <section>
+      
+      <div class="bubbles">
+        <div id="aboutCont">
+          <div>
+            <span id="autoType">
+              <h1>Vlady Zarankin</h1>
+
+              <span id="autoTypeElem"> </span>
+            </span>
+
+            <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+            <script>
+              const typed = new Typed("#autoTypeElem", {
+                strings: ["Full Stack Web Developer"],
+                typeSpeed: 60,
+              });
+            </script>
+            <p>
+              Welcome to my Portfolio! <br />
+              I'm passionate for creating smart software. I truly admire the
+              logical aspect of programming, So I'm learning all the time and do
+              it fast. I admire the intellectual challenges by solving problems.
+              I'm a team player, my focus is creating user friendly
+              applications. I specialize in JavaScript for both the front and
+              back end.
+            </p>
+          </div>
+          <div id="mainImgDiv">
+            <img src="./images/main.png" alt="My photo" />
+          </div>
+        </div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+      </div>
+      <div id="mainImgDiv2">
+        <img src="./images/main.png" alt="My photo" />
+      </div>
+    </section>
+   
+      <main>
+
+        <div class="galleryCont">
+          <div id="headProjects">My Projects</div>
+
+          <div class="gallery">
+            <div class="card" id="card">
+              <img class="projImg" src="./images/snakeProject.png" alt="" />
+              <span class="icons">
+                <img src="./images/htmlIcon.png" alt="html icon" />
+                <img src="./images/cssIcon.png" alt="css icon" />
+                <img src="./images/jsIcon.png" alt="JavaScript icon" />
+              </span>
+
+              <span class="projName">Snake</span>
+              <p>
+                This project displays a snake game with increasing difficulty
+              </p>
+
+              <button class="projectBtn" data-content="btn1">
+                Show Project
+              </button>
+            </div>
+            <div class="card">
+              <img class="projImg" src="./images/memoryGameProject.png" alt="" />
+              <span class="icons">
+                <img src="./images/htmlIcon.png" alt="html icon" />
+                <img src="./images/cssIcon.png" alt="css icon" />
+                <img src="./images/jsIcon.png" alt="JavaScript icon" />
+              </span>
+
+              <span class="projName">Memory Game</span>
+              <p>
+                This project displays a memory game with user inputs for the
+                game setup
+              </p>
+
+              <button class="projectBtn" data-content="btn2">
+                Show Project
+              </button>
+            </div>
+            <div class="card">
+              <img class="projImg" src="./images/toDoListProject.png" alt="" />
+              <span class="icons">
+                <img src="./images/htmlIcon.png" alt="html icon" />
+                <img src="./images/cssIcon.png" alt="css icon" />
+                <img src="./images/jsIcon.png" alt="JavaScript icon" />
+              </span>
+
+              <span class="projName">To Do List</span>
+              <p>
+                This project displays a To Do List that appends the tasks to
+                both the screen and the local storage
+              </p>
+
+              <button class="projectBtn" data-content="btn3">
+                Show Project
+              </button>
+            </div>
+            <div class="card">
+              <img class="projImg" src="./images/gallery.png" alt="" />
+              <div class="icons">
+                <img src="./images/htmlIcon.png" alt="html icon" />
+                <img src="./images/cssIcon.png" alt="css icon" />
+                <img src="./images/jsIcon.png" alt="JavaScript icon" />
+                <p class="oop" id="oop1">{ OOP }</p>
+              </div>
+
+              <span class="projName">Gallery</span>
+              <p>This project displays an image Gallery using OOP</p>
+
+              <button class="projectBtn" data-content="btn4">
+                Show Project
+              </button>
+            </div>
+            <div class="card">
+              <img class="projImg" src="./images/calculator.png" alt="" />
+              <span class="icons">
+                <img src="./images/htmlIcon.png" alt="html icon" />
+                <img src="./images/cssIcon.png" alt="css icon" />
+                <img src="./images/tsIcon.png" alt="TypeScript icon" />
+                <p class="oop" id="oop2">{ OOP }</p>
+              </span>
+
+              <span class="projName">Calculator</span>
+              <p>
+                The project displays a calculator app using OOP in TypeScript
+              </p>
+
+              <button class="projectBtn" data-content="btn5">
+                Show Project
+              </button>
+            </div>
+            <div class="card">
+              <img class="projImg" src="./images/ticTacToe.png" alt="" />
+              <span class="icons">
+                <img src="./images/htmlIcon.png" alt="html icon" />
+                <img src="./images/cssIcon.png" alt="css icon" />
+                <img src="./images/jsIcon.png" alt="JavaScript icon" />
+              </span>
+
+              <span class="projName">Tic Tac Toe</span>
+              <p>This project displays a fun Tic tac Toe game</p>
+
+              <button class="projectBtn" data-content="btn6">
+                Show Project
+              </button>
+            </div>
+          </div>
+        </main>
+        <div class="projPageCont">
+          <div class="project"></div>
+        </div>
+    </div>
+    
+  </body>
+</html>
