@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <script src="main.js" defer></script>
-  <link rel="stylesheet" href="style.css" />
+    <script src="validate.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+
   <link
     rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Tilt Prism"
   />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   </head>
   
   <body>
@@ -23,6 +28,7 @@
     <div class="menu">
       <a href="#top">Home</a>
       <a href="#card">Projects</a>
+      <a href="#contForm">Contact</a>
     </div>
 
     <section>
@@ -93,9 +99,9 @@
                 This project displays a snake game with increasing difficulty
               </p>
 
-              <button class="projectBtn" data-content="btn1">
+              <a  href="project1.html" target="_blank" class="projectBtn" data-content="btn1">
                 Show Project
-              </button>
+              </a>
             </div>
             <div class="card">
               <img class="projImg" src="./images/memoryGameProject.png" alt="" />
@@ -110,10 +116,9 @@
                 This project displays a memory game with user inputs for the
                 game setup
               </p>
-
-              <button class="projectBtn" data-content="btn2">
+              <a href="project2.html" target="_blank" class="projectBtn" data-content="btn2">
                 Show Project
-              </button>
+              </a>
             </div>
             <div class="card">
               <img class="projImg" src="./images/toDoListProject.png" alt="" />
@@ -129,9 +134,9 @@
                 both the screen and the local storage
               </p>
 
-              <button class="projectBtn" data-content="btn3">
+              <a href="project3.html"  target="_blank" class="projectBtn" data-content="btn3">
                 Show Project
-              </button>
+              </a>
             </div>
             <div class="card">
               <img class="projImg" src="./images/gallery.png" alt="" />
@@ -145,9 +150,9 @@
               <span class="projName">Gallery</span>
               <p>This project displays an image Gallery using OOP</p>
 
-              <button class="projectBtn" data-content="btn4">
+              <a href="project4.html" target="_blank" class="projectBtn" data-content="btn4">
                 Show Project
-              </button>
+              </a>
             </div>
             <div class="card">
               <img class="projImg" src="./images/calculator.png" alt="" />
@@ -163,9 +168,9 @@
                 The project displays a calculator app using OOP in TypeScript
               </p>
 
-              <button class="projectBtn" data-content="btn5">
+              <a href="project5.html" target="_blank" class="projectBtn" data-content="btn5">
                 Show Project
-              </button>
+              </a>
             </div>
             <div class="card">
               <img class="projImg" src="./images/ticTacToe.png" alt="" />
@@ -178,16 +183,48 @@
               <span class="projName">Tic Tac Toe</span>
               <p>This project displays a fun Tic tac Toe game</p>
 
-              <button class="projectBtn" data-content="btn6">
+              <a href="project6.html" target="_blank" class="projectBtn" data-content="btn6">
                 Show Project
-              </button>
+              </a>
             </div>
           </div>
         </main>
         <div class="projPageCont">
           <div class="project"></div>
         </div>
+        <div class="container" id="contForm">
+          <form action="">
+            <div id="contHead"><h2>Contact me</h2></div>
+
+            <label for="fname">First Name</label>
+            <input class="inpField" type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+            <label for="lname">Last Name</label>
+            <input class="inpField" type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="mail">Email</label>
+            <input class="inpField" type="email" id="mail" name="email" placeholder="Your email..">
+        
+        
+            <label for="message">Message</label>
+            <textarea class="inpField" id="message" name="subject" placeholder="Write me something.." ></textarea>
+        
+            <div id="sub"><input id="submitBtn" type="button" value="Submit"></div>
+          </form>
+        </div>
     </div>
-    
+    <div id="userMesCont"><div id="userMessage"></div></div>
+
+<footer>
+  <div class="footerElem">&copy; Vlady Zarankin</div>
+  <div class="footerElem" id="footElem2">  <a href="#top">Home</a>
+    <a href="#card">Projects</a>
+    <a href="#contForm">Contact</a></div>
+  <div class="footerElem"><a href="https://www.facebook.com/vladimir.zarankin.3/" class="fa fa-facebook" target="_blank"></a><a href="https://www.instagram.com/" class="fa fa-instagram" target="_blank"></a><a href="https://www.linkedin.com/feed/" class="fa fa-linkedin" target="_blank"></a>
+
+
+  </div>
+</footer>
   </body>
 </html>
+
