@@ -2,229 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <script src="main.js" defer></script>
-    <script src="validate.js" defer></script>
-    <link rel="stylesheet" href="style.css" />
-
-  <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Tilt Prism"
-  />
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./src/style.css" />
   </head>
-  
   <body>
-    <a href="file:///Full stack web 13.10.22/calculator files/index.html"></a>
-    <div class="navBarDiv">
-      <div class="bar" id="bar1"></div>
-      <div class="bar" id="bar2"></div>
-      <div class="bar" id="bar3"></div>
-    </div>
-
-    <div class="menu">
-      <a href="#top">Home</a>
-      <a href="#card">Projects</a>
-      <a href="#contForm">Contact</a>
-    </div>
-
-    <section>
-      
-      <div class="bubbles">
-        <div id="aboutCont">
-          <div>
-            <span id="autoType">
-              <h1>Vlady Zarankin</h1>
-
-              <span id="autoTypeElem"> </span>
-            </span>
-
-            <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
-            <script>
-              const typed = new Typed("#autoTypeElem", {
-                strings: ["Full Stack Web Developer"],
-                typeSpeed: 60,
-              });
-            </script>
-            <p>
-              Welcome to my Portfolio! <br />
-              I'm passionate for creating smart software. I truly admire the
-              logical aspect of programming, So I'm learning all the time and do
-              it fast. I admire the intellectual challenges by solving problems.
-              I'm a team player, my focus is creating user friendly
-              applications. I specialize in JavaScript for both the front and
-              back end.
-            </p>
-          </div>
-          <div id="mainImgDiv">
-            <img src="./images/main.png" alt="My photo" />
-          </div>
+    <div class="frame">
+      <div class="calculatorCont">
+        <div class="output">
+          <div data-previousOp class="previousOp"></div>
+          <div data-currentOp class="currentOp"></div>
         </div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
+        <button data-allClr class="span2Btns">AC</button>
+        <button data-del>Del</button>
+        <button data-opera>/</button>
+        <button data-num>1</button>
+        <button data-num>2</button>
+        <button data-num>3</button>
+        <button data-opera>*</button>
+        <button data-num>4</button>
+        <button data-num>5</button>
+        <button data-num>6</button>
+        <button data-opera>+</button>
+        <button data-num>7</button>
+        <button data-num>8</button>
+        <button data-num>9</button>
+        <button data-opera>-</button>
+        <button data-num>.</button>
+        <button data-num>0</button>
+        <button class="span2Btns" data-equ>=</button>
       </div>
-      <div id="mainImgDiv2">
-        <img src="./images/main.png" alt="My photo" />
-      </div>
-    </section>
-   
-      <main>
-
-        <div class="galleryCont">
-          <div id="headProjects">My Projects</div>
-
-          <div class="gallery">
-            <div class="card" id="card">
-              <img class="projImg" src="./images/snakeProject.png" alt="" />
-              <span class="icons">
-                <img src="./images/htmlIcon.png" alt="html icon" />
-                <img src="./images/cssIcon.png" alt="css icon" />
-                <img src="./images/jsIcon.png" alt="JavaScript icon" />
-              </span>
-
-              <span class="projName">Snake</span>
-              <p>
-                This project displays a snake game with increasing difficulty
-              </p>
-
-              <a  href="project1.html" target="_blank" class="projectBtn" data-content="btn1">
-                Show Project
-              </a>
-            </div>
-            <div class="card">
-              <img class="projImg" src="./images/memoryGameProject.png" alt="" />
-              <span class="icons">
-                <img src="./images/htmlIcon.png" alt="html icon" />
-                <img src="./images/cssIcon.png" alt="css icon" />
-                <img src="./images/jsIcon.png" alt="JavaScript icon" />
-              </span>
-
-              <span class="projName">Memory Game</span>
-              <p>
-                This project displays a memory game with user inputs for the
-                game setup
-              </p>
-              <a href="project2.html" target="_blank" class="projectBtn" data-content="btn2">
-                Show Project
-              </a>
-            </div>
-            <div class="card">
-              <img class="projImg" src="./images/toDoListProject.png" alt="" />
-              <span class="icons">
-                <img src="./images/htmlIcon.png" alt="html icon" />
-                <img src="./images/cssIcon.png" alt="css icon" />
-                <img src="./images/jsIcon.png" alt="JavaScript icon" />
-              </span>
-
-              <span class="projName">To Do List</span>
-              <p>
-                This project displays a To Do List that appends the tasks to
-                both the screen and the local storage
-              </p>
-
-              <a href="project3.html"  target="_blank" class="projectBtn" data-content="btn3">
-                Show Project
-              </a>
-            </div>
-            <div class="card">
-              <img class="projImg" src="./images/gallery.png" alt="" />
-              <div class="icons">
-                <img src="./images/htmlIcon.png" alt="html icon" />
-                <img src="./images/cssIcon.png" alt="css icon" />
-                <img src="./images/jsIcon.png" alt="JavaScript icon" />
-                <p class="oop" id="oop1">{ OOP }</p>
-              </div>
-
-              <span class="projName">Gallery</span>
-              <p>This project displays an image Gallery using OOP</p>
-
-              <a href="project4.html" target="_blank" class="projectBtn" data-content="btn4">
-                Show Project
-              </a>
-            </div>
-            <div class="card">
-              <img class="projImg" src="./images/calculator.png" alt="" />
-              <span class="icons">
-                <img src="./images/htmlIcon.png" alt="html icon" />
-                <img src="./images/cssIcon.png" alt="css icon" />
-                <img src="./images/tsIcon.png" alt="TypeScript icon" />
-                <p class="oop" id="oop2">{ OOP }</p>
-              </span>
-
-              <span class="projName">Calculator</span>
-              <p>
-                The project displays a calculator app using OOP in TypeScript
-              </p>
-
-              <a href="project5.html" target="_blank" class="projectBtn" data-content="btn5">
-                Show Project
-              </a>
-            </div>
-            <div class="card">
-              <img class="projImg" src="./images/ticTacToe.png" alt="" />
-              <span class="icons">
-                <img src="./images/htmlIcon.png" alt="html icon" />
-                <img src="./images/cssIcon.png" alt="css icon" />
-                <img src="./images/jsIcon.png" alt="JavaScript icon" />
-              </span>
-
-              <span class="projName">Tic Tac Toe</span>
-              <p>This project displays a fun Tic tac Toe game</p>
-
-              <a href="project6.html" target="_blank" class="projectBtn" data-content="btn6">
-                Show Project
-              </a>
-            </div>
-          </div>
-        </main>
-        <div class="projPageCont">
-          <div class="project"></div>
-        </div>
-        <div class="container" id="contForm">
-          <form action="">
-            <div id="contHead"><h2>Contact me</h2></div>
-
-            <label for="fname">First Name</label>
-            <input class="inpField" type="text" id="fname" name="firstname" placeholder="Your name..">
-        
-            <label for="lname">Last Name</label>
-            <input class="inpField" type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-            <label for="mail">Email</label>
-            <input class="inpField" type="email" id="mail" name="email" placeholder="Your email..">
-        
-        
-            <label for="message">Message</label>
-            <textarea class="inpField" id="message" name="subject" placeholder="Write me something.." ></textarea>
-        
-            <div id="sub"><input id="submitBtn" type="button" value="Submit"></div>
-          </form>
-        </div>
     </div>
-    <div id="userMesCont"><div id="userMessage"></div></div>
-
-<footer>
-  <div class="footerElem">&copy; Vlady Zarankin</div>
-  <div class="footerElem" id="footElem2">  <a href="#top">Home</a>
-    <a href="#card">Projects</a>
-    <a href="#contForm">Contact</a></div>
-  <div class="footerElem"><a href="https://www.facebook.com/vladimir.zarankin.3/" class="fa fa-facebook" target="_blank"></a><a href="https://www.instagram.com/" class="fa fa-instagram" target="_blank"></a><a href="https://www.linkedin.com/feed/" class="fa fa-linkedin" target="_blank"></a>
-
-
-  </div>
-</footer>
+    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
-
