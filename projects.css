@@ -151,15 +151,17 @@ body {
   margin: 0;
 }
 
+@media screen and (max-width: 768px) {
+  #projImg2 {
+    width: 85%;
+    height: auto;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .projPageCont .project .projImg {
     width: 85vw;
     box-shadow: 2px 2px 8px 3px hwb(249 59% 2%);
-  }
-
-  #projImg5 {
-    width: 85%;
-    height: auto;
   }
 
   .projPageCont .project p {
