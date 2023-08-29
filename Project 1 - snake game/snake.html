@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Snake game</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia&shadow-multiple"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 id="welcome">Welcome to Snake</h1>
+
+      <span id="startGame">Start the game</span>
+      <div id="instContainer">Instructions</div>
+      <div id="instructions">
+        Use the Arrow keys to move the snake.<br />
+        Collect as many apples as you can while avoiding the obstacles.<br />
+        Notice that you have 3 lives, they only relate to the snake<br />
+        hitting one of the obstacles. If you you hit one of the borders or the
+        snake itself,<br />
+        it's game over immediately, regardless of the lives left.<br />
+        Good luck !
+      </div>
+    </div>
+
+    <div id="snake">
+      <h1>Snake</h1>
+
+      <div id="scoreDiv">
+        <p id="lives"></p>
+        <p>Score: <b id="scoreNum"></b></p>
+        <p>Timer: <b id="timerNum">00:00</b></p>
+      </div>
+      <div class="gameOverWin">
+        <p></p>
+        <span id="restart"></span>
+      </div>
+      <div class="board"></div>
+    </div>
+  </body>
+</html>
