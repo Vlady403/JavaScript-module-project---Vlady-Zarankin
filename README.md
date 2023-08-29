@@ -30,14 +30,18 @@ In each page there is a discription for each project and two buttons:
   There is a proper discription for each project inside a README file in each project's folder.
 
 # Installation
-To get [Project 5 - Calculator] up and running on your local machine, follow these steps:
+To get "Project 5 - Calculator" up and running on your local machine, follow these steps:
 
-Navigate to the project directory: cd Calculator
 Run the following commands:
-`npm install`
+
+Navigate to the project directory: `cd Calculator`.
+
+Install the package: `npm install`.
+
 Start the development servers:
-`npm run dev`
-The local host adress will be shown, click 'ctr' and press on the link to upload the projec
+`npm run dev`.
+
+The local host address will be shown, click 'ctr' and press on the link to upload the project.
 
 # Technologies Used
 - HTML
