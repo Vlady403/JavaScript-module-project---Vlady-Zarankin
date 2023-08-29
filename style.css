@@ -908,8 +908,8 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-  form {
-    width: 60%;
+ form {
+    width: 75%;
   }
   #aboutCont {
     display: flex;
