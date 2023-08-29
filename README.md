@@ -1,8 +1,8 @@
 # Table of Contents
-Overview
-Installation
-Technologies Used
-License
+- Overview
+- Installation
+- Technologies Used
+- License
 
 # JavaScript-module-project---Vlady-Zarankin
 # overview
