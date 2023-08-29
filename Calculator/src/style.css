@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 255, 0, 0.778),
+    hsl(226, 100%, 74%)
+  );
+}
+
+.frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 99%;
+}
+
+.calculatorCont {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(4, 70px);
+  grid-template-rows: minmax(100px, auto) repeat(5, 70px);
+  box-shadow: 1px 2px 6px 2px #555;
+  border-radius: 20px;
+  padding: 20px 15px 15px;
+  gap: 10px;
+  background: linear-gradient(#ddd, #eee);
+}
+
+.calculatorCont button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid #000;
+  padding: 10px;
+  outline: none;
+  background-color: #309;
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: 1px 1px 4px 1px #444;
+  filter: contrast(0.8);
+}
+
+.calculatorCont button:hover {
+  background: linear-gradient(#3a00ad, hsl(260, 99%, 26%));
+  filter: contrast(0.9);
+  box-shadow: 1px 1px 5px 1px #aaa;
+}
+
+.span2Btns {
+  grid-column: span 2;
+}
+
+.output {
+  grid-column: 1 / -1;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: end;
+  justify-content: space-around;
+  max-height: 90px;
+  overflow: hidden;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+  margin-bottom: 10px;
+}
+.output .previousOp {
+  color: #ccc;
+  font-size: 1.5rem;
+}
+
+.output .currentOp {
+  color: #fff;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .calculatorCont {
+    grid-template-columns: repeat(4, 60px);
+    grid-template-rows: minmax(100px, auto) repeat(5, 60px);
+    gap: 8px;
+    padding: 15px 12px 12px;
+  }
+
+  .calculatorCont button {
+    font-size: 1.8rem;
+    padding: 7px;
+    border-radius: 14px;
+  }
+  .output .previousOp {
+    color: #ccc;
+    font-size: 1.35rem;
+  }
+
+  .output .currentOp {
+    color: #fff;
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .calculatorCont {
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: minmax(90px, auto) repeat(5, 50px);
+    gap: 7px;
+    padding: 13px 10px 10px;
+  }
+
+  .calculatorCont button {
+    font-size: 1.5rem;
+    border-radius: 13px;
+  }
+  .output .previousOp {
+    color: #ccc;
+    font-size: 1.1rem;
+  }
+
+  .output .currentOp {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+}
