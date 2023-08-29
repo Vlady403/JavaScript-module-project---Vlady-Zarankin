@@ -1,5 +1,11 @@
-# JavaScript-module-project---Vlady-Zarankin
+# Table of Contents
+Overview
+Installation
+Technologies Used
+License
 
+# JavaScript-module-project---Vlady-Zarankin
+# overview
 The given project is a summary for the JavaScript module.
 It consists from a portfolio website that contains 6 seperate projects in JavaScript and Typescript.
 
@@ -22,6 +28,27 @@ In each page there is a discription for each project and two buttons:
   6. Tic tac toe game.
  
   There is a proper discription for each project inside a README file in each project's folder.
+
+# Installation
+To get [Project 5 - Calculator] up and running on your local machine, follow these steps:
+
+Navigate to the project directory: cd Calculator
+Run the following commands:
+`npm install`
+Start the development servers:
+`npm run dev`
+The local host adress will be shown, click 'ctr' and press on the link to upload the projec
+
+# Technologies Used
+- HTML
+- CSS
+- JavaScript
+- TypeScript
+- Object Oriented Programming
+- Typed.js library
+
+# License
+This project is licensed under the "MIT License" License - see the LICENSE file for details.
 
 
   
