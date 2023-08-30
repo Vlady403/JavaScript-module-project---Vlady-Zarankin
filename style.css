@@ -245,6 +245,18 @@ body {
   color: #000;
 }
 
+.top3 {
+  transition: all 1s;
+  transform: translateY(-50%);
+  opacity: 0;
+}
+
+.bottom3 {
+  transition: all 1s;
+  transform: translateY(50%);
+  opacity: 0;
+}
+
 .card:hover {
   transform: scale(1.02);
 }
@@ -401,6 +413,7 @@ body {
   margin-bottom: 30px;
   margin-top: 50px;
   z-index: 999;
+  overflow: hidden;
 }
 
 #aboutCont div {
@@ -416,6 +429,12 @@ body {
   z-index: 999;
   height: fit-content;
   gap: 10px;
+  overflow: hidden;
+}
+
+#aboutText {
+  transition: transform 0.7s;
+  transform: translateX(-100%);
 }
 
 #aboutCont p {
@@ -428,6 +447,7 @@ body {
   max-height: 50%;
   object-fit: cover;
   z-index: 999;
+  overflow: hidden;
 }
 
 #mainImgDiv {
@@ -435,6 +455,8 @@ body {
   align-items: center;
   z-index: 2;
   position: relative;
+  transition: transform 0.7s;
+  transform: translateX(100%);
 }
 
 @keyframes slide-in-from-right {
@@ -633,6 +655,7 @@ footer a {
 }
 
 #mainImgDiv2 {
+  transition: transform 0.7s;
   display: none;
 }
 
@@ -847,6 +870,20 @@ footer {
   color: hsl(323, 77%, 30%);
 }
 
+.slideDown {
+  animation: slide-down;
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
 @media screen and (max-width: 900px) {
   .gallery {
     grid-template-rows: repeat(2, auto);
@@ -905,10 +942,16 @@ footer {
   textarea {
     padding: 6px;
   }
+
+  .top3,
+  .bottom3 {
+    transform: translateY(50%);
+    opacity: 0;
+  }
 }
 
 @media screen and (max-width: 600px) {
- form {
+  form {
     width: 75%;
   }
   #aboutCont {
@@ -971,6 +1014,7 @@ footer {
     justify-content: center;
     align-items: center;
     margin: 40px 0;
+    transform: translateX(100%);
   }
 
   #mainImgDiv2 img {
