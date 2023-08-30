@@ -175,7 +175,7 @@ body {
   }
 }
 
-/* @media screen and (max-height: 550px) {
+@media screen and (max-height: 550px) {
   .projPageCont .project .projImg,
   #projImg2,
   #projImg5 {
@@ -183,4 +183,4 @@ body {
     height: 38%;
     margin-bottom: 20px;
   }
-} */
+}
