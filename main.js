@@ -15,19 +15,20 @@ navBar.addEventListener("click", () => {
 window.addEventListener("scroll", slide);
 
 function slide() {
+  const allCards = document.querySelectorAll(".card");
+
   const topImages = document.querySelectorAll(".top3");
 
   const bottomImages = document.querySelectorAll(".bottom3");
 
   const scrHeight = window.innerHeight;
 
-  const scrWidth = screen.width;
-
   for (let i = 0; i < topImages.length; i++) {
     const topImgScrPos = topImages[i].getBoundingClientRect().top;
 
     if (topImgScrPos < scrHeight) {
       topImages[i].style.transform = "translateY(0)";
+
       topImages[i].style.opacity = "1";
     }
   }
@@ -37,9 +38,20 @@ function slide() {
 
     if (bottomImgScrPos < scrHeight) {
       bottomImages[i].style.transform = "translateY(0)";
+
       bottomImages[i].style.opacity = "1";
     }
   }
+
+  allCards.forEach((card) => {
+    card.addEventListener("mouseover", () => {
+      card.style.transform = "scale(1.03)";
+    });
+
+    card.addEventListener("mouseout", () => {
+      card.style.transform = "scale(1)";
+    });
+  });
 }
 
 function appear() {
