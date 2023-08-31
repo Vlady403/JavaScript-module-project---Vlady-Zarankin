@@ -34,7 +34,7 @@ To get "Project 5 - Calculator" up and running on your local machine, follow the
 
 Run the following commands:
 
-Navigate to the project directory: `cd Calculator`.
+Navigate to the project directory: `cd + tab + enter`.
 
 Install the package: `npm install`.
 
